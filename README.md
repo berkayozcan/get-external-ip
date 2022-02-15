@@ -1,3 +1,7 @@
+This is the python script for getting external ip of network.
+
+
+
 #You can specify a Python version for pip to use:
 #pip3.4 install requests
 
