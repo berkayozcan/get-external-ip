@@ -9,14 +9,10 @@
 
 import time
 from requests import get
-
 import datetime;
-  
-# ct stores current time
-ct = datetime.datetime.now()
-
 
 while True:
+    ct = datetime.datetime.now()
     ip = get('https://api.ipify.org').content.decode('utf8')
     print('WAN IP address is: {} - Time '.format(ip))
     print("current time:-", ct)
