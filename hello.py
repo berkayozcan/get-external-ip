@@ -8,6 +8,7 @@
 #pip3 install requests
 
 import time
+import requests
 from requests import get
 import datetime;
 
@@ -16,4 +17,9 @@ while True:
     ip = get('https://api.ipify.org').content.decode('utf8')
     print('WAN IP address is: ', ip)
     print("Time: ", ct)
+
+    r = requests.post('http://helium.berkay.click/ip/' + ip + '/time/' + str(ct))
+    print(r.url)
+    print(r.status_code, r.reason)
+    print(r.text[:300] + '...')
     time.sleep(5)
