@@ -14,6 +14,6 @@ import datetime;
 while True:
     ct = datetime.datetime.now()
     ip = get('https://api.ipify.org').content.decode('utf8')
-    print('WAN IP address is: {} - Time '.format(ip))
-    print("current time:-", ct)
+    print('WAN IP address is: ', ip)
+    print("Time: ", ct)
     time.sleep(5)
