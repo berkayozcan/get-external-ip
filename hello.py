@@ -22,4 +22,4 @@ while True:
     print(r.url)
     print(r.status_code, r.reason)
     print(r.text[:300] + '...')
-    time.sleep(5)
+    time.sleep(60)
